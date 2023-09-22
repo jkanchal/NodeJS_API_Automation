@@ -24,8 +24,9 @@ pipeline {
             steps {
 
                 echo "${params.Production}"
-                //bat 'cd ./API Automation'
-                bat '/API Automation/npm install'
+                echo "${WORKSPACE}"
+                bat "cd ./API Automation"
+                bat "npm install"
 
             }
         }
