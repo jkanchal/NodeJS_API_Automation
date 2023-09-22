@@ -31,8 +31,7 @@ pipeline {
 
                 echo "${params.mot}"
                 echo "${params.Service}"
-                //sh "npm run ${params.Service}"
-
+                
             }
         }
 
