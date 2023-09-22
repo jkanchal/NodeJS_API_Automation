@@ -21,7 +21,7 @@ pipeline {
             steps {
 
                 echo "${params.Production}"
-                bat 'cd ..\NodeJS_API_Automation/API Automation\'
+                bat 'cd API Automation'
                 bat 'npm install'
 
             }
