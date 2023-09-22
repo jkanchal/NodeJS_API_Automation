@@ -1,5 +1,14 @@
 pipeline {
 
+    parameters {
+    
+        booleanParam(defaultValue : true , description : 'Production Environment' , name : 'prod' )
+        booleanParam(defaultValue : true , description : 'MOT Environment' , name : 'mot' )
+        choice(name : 'Service' , choices : ['test' , 'test1' , 'dev' , 'dev-test'] , description : 'Select Application Service')
+        choice( name : 'All' , choices : ['dev-test'] , description : 'Select All Services')
+    
+    }
+
     agent any
 
     stages {
@@ -8,11 +17,8 @@ pipeline {
 
             steps {
 
-<<<<<<< HEAD
                 npm run dev-test
-=======
                 npm run dev-test env
->>>>>>> feature-test
 
             }
         }
