@@ -37,6 +37,7 @@ pipeline {
 
                 echo "${params.mot}"
                 echo "${params.Service}"
+                bat "npm run dev-test"
                 
             }
         }
