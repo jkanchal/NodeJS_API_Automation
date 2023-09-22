@@ -37,8 +37,11 @@ pipeline {
 
                 echo "${params.mot}"
                 echo "${params.Service}"
-                bat "npm run dev-test"
-                
+                 bat """
+                    cd API Automation
+                    npm run dev-test
+                """
+                                
             }
         }
 
