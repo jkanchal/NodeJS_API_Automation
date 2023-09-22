@@ -17,8 +17,7 @@ pipeline {
 
             steps {
 
-                npm run dev-test
-                npm run dev-test env
+                echo "${params.prod}"
 
             }
         }
