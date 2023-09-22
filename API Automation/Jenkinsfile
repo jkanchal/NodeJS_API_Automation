@@ -25,9 +25,10 @@ pipeline {
 
                 echo "${params.Production}"
                 echo "${WORKSPACE}"
-                //bat "cd ./API Automation"
-                sh "npm install"
-
+                bat """
+                    cd API Automation
+                    npm install
+                """
             }
         }
         stage("test") {
