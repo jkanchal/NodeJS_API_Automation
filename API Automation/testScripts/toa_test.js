@@ -45,7 +45,7 @@ describe("Sample API Test-1", ()=>{
 
     it("should be false", ()=>{
 
-        expect(num).toBe(11);
+        expect(num).toBe(10);
     });
 
     it("should perform Health check on User API", ()=> {
