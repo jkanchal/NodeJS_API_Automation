@@ -19,6 +19,7 @@ pipeline {
             steps {
 
                 echo "${params.Production}"
+                sh "npm install"
 
             }
         }
@@ -28,6 +29,7 @@ pipeline {
 
                 echo "${params.mot}"
                 echo "${params.Service}"
+                sh "npm run ${params.Service}"
 
             }
         }
