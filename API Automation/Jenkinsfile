@@ -1,0 +1,22 @@
+pipeline {
+
+    agent any
+
+    stages {
+        
+        stage("test") {
+
+            steps {
+
+<<<<<<< HEAD
+                npm run dev-test
+=======
+                npm run dev-test env
+>>>>>>> feature-test
+
+            }
+        }
+
+    }
+}
+

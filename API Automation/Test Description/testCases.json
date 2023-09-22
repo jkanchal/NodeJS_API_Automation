@@ -1,0 +1,10 @@
+{
+    "positive_scenarios": {
+      "TC1": "Verify the user service is up and running",
+      "TC2": "Verify the user service api is returning 200 status",
+      "TC3": "JanVerify the user id from the response is returning correctly"
+    },
+    "negative_scenarios": {
+      "TC1": "Verify the response status is 404 for incorrect user input"
+    }
+  }
