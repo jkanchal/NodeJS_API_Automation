@@ -10,6 +10,9 @@ pipeline {
     }
 
     agent any
+    environment { 
+    WORKSPACE="${WORKSPACE}/API Automation" 
+    }
 
     tools {nodejs "node"}
 
@@ -21,7 +24,7 @@ pipeline {
             steps {
 
                 echo "${params.Production}"
-                bat 'cd ./API Automation'
+                //bat 'cd ./API Automation'
                 bat 'npm install'
 
             }
