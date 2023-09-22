@@ -25,7 +25,7 @@ pipeline {
 
                 echo "${params.Production}"
                 //bat 'cd ./API Automation'
-                bat 'npm install'
+                bat '/API Automation/npm install'
 
             }
         }
