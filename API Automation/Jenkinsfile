@@ -2,7 +2,7 @@ pipeline {
 
     parameters {
     
-        booleanParam(defaultValue : false , description : 'Production Environment' , name : 'prod' )
+        booleanParam(defaultValue : false , description : 'Production Environment' , name : 'Production' )
         booleanParam(defaultValue : false , description : 'MOT Environment' , name : 'mot' )
         choice(name : 'Service' , choices : ['test' , 'test1' , 'dev' , 'dev-test'] , description : 'Select Application Service')
         choice( name : 'All' , choices : ['dev-test'] , description : 'Select All Services')
@@ -13,11 +13,21 @@ pipeline {
 
     stages {
         
+
+        stage("build") {
+
+            steps {
+
+                echo "${params.Production}"
+
+            }
+        }
         stage("test") {
 
             steps {
 
-                echo "${params.prod}"
+                echo "${params.mot}"
+                echo "${params.Service}"
 
             }
         }
