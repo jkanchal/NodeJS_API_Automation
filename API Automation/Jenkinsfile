@@ -21,7 +21,7 @@ pipeline {
             steps {
 
                 echo "${params.Production}"
-                sh 'npm install'
+                bat 'npm install'
 
             }
         }
