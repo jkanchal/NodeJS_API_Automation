@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1695398093368' stop='1695398093638'>
+    <name>Sample API Test-1</name>
+    <title>Sample API Test-1</title>
+    <test-cases>
+        <test-case start='1695398093369' status='passed' stop='1695398093370'>
+            <name>should be true</name>
+            <title>should be true</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1695398093370' status='failed' stop='1695398093371'>
+            <name>should be false</name>
+            <title>should be false</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expected 10 to be 11.</message>
+                <stack-trace>    at &lt;Jasmine>
+                    at UserContext.&lt;anonymous> (C:\Automation\NodeJS_API_Automation\API Automation\testScripts\toa_test.js:48:21)
+                    at &lt;Jasmine></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1695398093371' status='passed' stop='1695398093638'>
+            <name>should perform Health check on User API</name>
+            <title>should perform Health check on User API</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
