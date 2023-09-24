@@ -1,7 +1,7 @@
 
-var fs = require('fs')
-var concat = require('concat-stream')
-var joiMachine = require('joi-machine')
+const fs = require('fs')
+const concat = require('concat-stream')
+const joiMachine = require('joi-machine')
  
 // data.json: {"foo": {}, "bar": 45, "baz": ["foob"]}
 fs.createReadStream(__dirname + '/joiData.json')
