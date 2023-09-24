@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1695520081517' stop='1695520081549'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1695528513559' stop='1695528513586'>
     <name>USER API Test Suite for Health Check</name>
     <title>USER API Test Suite for Health Check</title>
     <test-cases>
-        <test-case start='1695520081517' status='passed' stop='1695520081549'>
+        <test-case start='1695528513559' status='passed' stop='1695528513586'>
             <name>should perform Health check on User API</name>
             <title>should perform Health check on User API</title>
             <labels/>
