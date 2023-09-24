@@ -5,7 +5,10 @@ console.log("---------toq_test.js---STARTED----");
 //--------------import all modules----------
 
 const frisby = require('frisby');
+const Joi = frisby.Joi;
 let conf = require("../jasmine.conf.js");
+const schema = require ("./jsonSchema.js");
+//const Joi = require('joi');
 
 
 //--------define all elements-----------
@@ -61,6 +64,30 @@ describe("Sample API Test-1", ()=>{
         return frisby.get(URI)
         .expect('status',200);
 
+    });
+
+
+    it("should validate response schema" , function() {
+
+        return frisby.get(URI)
+        .expect('status',200)
+        .expect('jsonTypes',{schema})
+        .then(function(res){
+
+            const result=Joi.validate(res.json, schema);
+            console.log("validation result-> " , result);
+            if (result.error) {
+                expect(false).toBeTruthy();
+                console.log("Schema match-failed");
+              }
+            else{
+                console.log("Schema match-passed");    
+            }
+
+            
+        });
+
+                      
     });
 
 });
