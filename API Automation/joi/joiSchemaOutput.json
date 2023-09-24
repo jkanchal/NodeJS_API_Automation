@@ -1,0 +1,13 @@
+Joi.object().keys({
+    data: Joi.object().keys({
+        id: Joi.number().integer(), 
+        email: Joi.string().email(), 
+        first_name: Joi.string(), 
+        last_name: Joi.string(), 
+        avatar: Joi.string().uri()
+    }), 
+    support: Joi.object().keys({
+        url: Joi.string().uri(), 
+        text: Joi.string()
+    })
+})
