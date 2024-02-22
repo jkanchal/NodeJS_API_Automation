@@ -29,6 +29,8 @@ pipeline {
                     cd API Automation
                     npm install
                 """
+            build job: 'First-Project'
+                
             }
         }
         stage("test") {
